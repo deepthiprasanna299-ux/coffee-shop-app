@@ -60,7 +60,7 @@ export default function ProductCard({ product, variant = 'default', index = 0 })
               </div>
               <Rating value={product.rating} />
             </div>
-            <span className="text-lg font-bold text-[#6d4731]">₹{product.price.toFixed(2)}</span>
+            <span className="text-lg font-bold text-[#6d4731]">${product.price.toFixed(2)}</span>
           </div>
         </button>
         <div className="flex items-end pb-0.5">
@@ -119,7 +119,7 @@ export default function ProductCard({ product, variant = 'default', index = 0 })
         </button>
 
         <div className="mt-3 flex items-center justify-between gap-2">
-          <p className="text-[1.05rem] font-bold text-[#734d30]">₹{product.price.toFixed(2)}</p>
+          <p className="text-[1.05rem] font-bold text-[#734d30]">${product.price.toFixed(2)}</p>
           <AddToCartButton onAdd={handleAddToCart} label={product.name} size="sm" />
         </div>
       </div>
